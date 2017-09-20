@@ -1,2 +1,2 @@
-# razatastic.github.com
+# razatastic.github.io
 Personal Website
