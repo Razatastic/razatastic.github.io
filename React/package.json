@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src\\ --inline",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src\\ --inline --mode development",
     "build:prod": "webpack -p && copy src\\index.html  dist\\index.html"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Ahmad Raza",
+  "license": "MIT",
   "dependencies": {
     "file-loader": "^1.1.11",
     "react": "^16.4.0",
