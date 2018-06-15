@@ -1,0 +1,31 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+
+/*Removes scroll bar for Particles.js canvas*/
+.background {
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/*Centers item both horizontally and vertically*/
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#greeting {
+  max-width: 500px;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 0 24px 0;
+  opacity: 0.9;
+}
+
+#greeting_icons {
+  max-width: 250px;
+}
