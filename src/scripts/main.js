@@ -5,7 +5,7 @@ feather.replace();
 window.onload = function () {
     Particles.init({
         selector: '.background',
-        color: '#6B5B95',
+        color: '#aaaaff',
         connectParticles: 'true',
         responsive: [
             {
