@@ -23,8 +23,9 @@ h1 {
 #greeting {
   max-width: 500px;
   padding: 50px;
-  background-color: white;
+  background: black;
   box-shadow: 0 0 24px 0;
+  border-radius: 50px;
 }
 
 #greeting_icons {
