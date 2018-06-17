@@ -3,14 +3,6 @@ body {
   overflow: hidden;
 }
 
-/* Removes scroll bar for Particles.js canvas on mobile */
-.background {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 /* Greeting colors */
 h1 {
   background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
@@ -29,7 +21,7 @@ h1 {
 }
 
 #greeting {
-  max-width: 500px;
+  max-width: 350px;
   padding: 50px;
   background: black;
   box-shadow: 0 0 24px 0;
