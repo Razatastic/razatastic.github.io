@@ -3,3 +3,10 @@
   background: black;
   margin: 20px 0 0 50px;
 }
+
+.cool_line {
+  display: block;
+  height: 0.5px;
+  background: white;
+  margin: 10px 0 10px 0;
+}
