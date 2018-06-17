@@ -1,24 +1,19 @@
 body {
   font-family: "Karla", sans-serif;
+  overflow: hidden;
 }
 
+/* Greeting colors */
 h1 {
   background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*Removes scroll bar for Particles.js canvas*/
-.background {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
 
-/*Centers item both horizontally and vertically*/
+/* Centers item both horizontally and vertically */
 .centered {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -42,4 +37,15 @@ h1 {
   color: inherit;
   text-decoration: none;
   margin: 0px 5px 0px 5px;
+}
+
+nav {
+  margin: 10px 0 0 0px;
+  text-align: center;
+}
+
+#navbar_link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 32px;
 }
