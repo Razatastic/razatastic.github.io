@@ -1,23 +1,20 @@
-// Loads Feather Icons
-feather.replace();
-
 // Particles.js Configuration
 window.onload = function() {
   Particles.init({
     selector: ".background",
-    color: "#aaaaff",
+    maxParticles: 60,
     connectParticles: "true",
     responsive: [
       {
         breakpoint: 768,
         options: {
-          maxParticles: 60
+          maxParticles: 40
         }
       },
       {
         breakpoint: 425,
         options: {
-          maxParticles: 30
+          maxParticles: 20
         }
       },
       {

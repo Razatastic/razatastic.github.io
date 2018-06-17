@@ -2,6 +2,12 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+h1 {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*Removes scroll bar for Particles.js canvas*/
 .background {
   display: block;
@@ -24,12 +30,12 @@ body {
   padding: 50px;
   background-color: white;
   box-shadow: 0 0 24px 0;
-  opacity: 0.8;
 }
 
 #greeting_icons {
   max-width: 250px;
   visibility: hidden;
+  font-size: 35px;
 }
 
 #social_icon {
