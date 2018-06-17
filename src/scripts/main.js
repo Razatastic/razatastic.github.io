@@ -29,6 +29,6 @@ window.onload = function() {
 
 // Social Icons animation
 setTimeout(function() {
-    document.getElementById("greeting_icons").style.visibility = "visible";
-    $('#greeting_icons').addClass('animated lightSpeedIn');
+  document.getElementById("greeting_icons").style.visibility = "visible";
+  $("#greeting_icons").addClass("animated lightSpeedIn");
 }, 1800);
