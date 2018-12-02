@@ -10,3 +10,33 @@
   background: white;
   margin: 10px 0 10px 0;
 }
+
+.card-collection {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+}
+
+.card-container {
+  width: 20vw;
+  height: 15vh;
+  border-radius: 25px;
+  background: black;
+  margin: 50px;
+  position: relative;
+}
+
+.card-title {
+  padding: 30px 0 0px 30px;
+}
+
+.card-body {
+  color: white;
+  padding: 0 30px 0px 30px;
+}
+
+.devpost-link {
+  padding: 30px 0 20px 30px;
+  position: absolute;
+  bottom: 0;
+}
