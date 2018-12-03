@@ -1,6 +1,6 @@
 body {
   margin-bottom: 50px;
-  min-height: 0;
+  min-height: 0px;
 }
 
 /* Banner */
@@ -27,7 +27,7 @@ body {
 }
 
 .row {
-  width: 100vw;
+  width: 90vw;
 }
 
 .card {
