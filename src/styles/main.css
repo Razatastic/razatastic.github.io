@@ -1,26 +1,36 @@
+html,
 body {
   font-family: "Karla", sans-serif;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* Greeting colors */
-h1 {
+.gradient-text {
   background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Centers item both horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#greeting {
+.greeting {
   max-width: 350px;
   padding: 50px;
   background: black;
@@ -28,21 +38,26 @@ h1 {
   border-radius: 50px;
 }
 
-#greeting_icons {
+#greeting-icons {
   max-width: 250px;
   visibility: hidden;
   font-size: 35px;
 }
 
-#social_icon {
+#social-icon {
   color: black;
   text-decoration: none;
   margin: 0px 5px 0px 5px;
 }
 
-#navbar_link {
-  color: black;
-  text-decoration: none;
-  font-size: 32px;
-  margin: 0 5px 0 5px;
+#social-icon:hover {
+  color: plum;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-item {
+  font-size: 20px;
 }

@@ -20,7 +20,7 @@ window.onload = function() {
       {
         breakpoint: 320,
         options: {
-          maxParticles: 0
+          maxParticles: 10
         }
       }
     ]
@@ -29,6 +29,6 @@ window.onload = function() {
 
 // Social Icons animation
 setTimeout(function() {
-  document.getElementById("greeting_icons").style.visibility = "visible";
-  $("#greeting_icons").addClass("animated lightSpeedIn");
-}, 1800);
+  document.getElementById("greeting-icons").style.visibility = "visible";
+  $("#greeting-icons").addClass("animated lightSpeedIn");
+}, 1500);
