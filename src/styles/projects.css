@@ -7,8 +7,9 @@ body {
 .jumbotron {
   border-radius: 20px 0px 0px 20px;
   background: black;
-  margin: 20px 0 0 5vw;
+  margin: 20px 0 0 0;
   width: 95vw;
+  float: right;
 }
 
 .cool-line {
@@ -27,7 +28,7 @@ body {
 }
 
 .row {
-  width: 90vw;
+  width: 100vw;
 }
 
 .card {
