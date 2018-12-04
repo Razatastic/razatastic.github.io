@@ -70,11 +70,11 @@ body {
 }
 
 /* Navbar */
-.navbar-brand {
+.navbar .navbar-brand {
   font-size: 30px;
 }
 
-.nav-item {
+.navbar .nav-item {
   font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */

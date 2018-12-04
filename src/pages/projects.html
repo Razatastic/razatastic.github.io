@@ -50,104 +50,166 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          
           <li class="nav-item active">
             <a class="nav-link" href="projects.html"
               >projects <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="../resume.pdf"
-                >résumé <span class="sr-only">(current)</span>
-              </a>
-            </li>
+            <a class="nav-link" href="../resume.pdf"
+              >résumé <span class="sr-only">(current)</span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-<div class="jumbotron-wrapper">
-    <div class="jumbotron col-12">
-      <h1 class="display-3 gradient-text heading">Projects</h1>
-      <span class="cool-line"></span>
-      <p class="sub-heading"><h1 class="lead sub-heading gradient-text">
-        A collection of things I've tinkered with.
-      </h1></p>
-    </div>
-  </div>
-    <!-- List of projects -->
-    <div class="row card-collection">
-      <div class="col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title gradient-text"><a href="https://github.com/wdbears/Cheffam">Cheffam</a></h5>
-            <p class="card-text">
-              <li class="card-text">A freelancing platform for chefs with a heavy focus on community involvement</li>
-            </p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-          <div class="container link-container">
-              <a href="#"><ion-icon name="logo-github" class="social-icon"></ion-icon></a>
-              <a href="#"><ion-icon src="../images/devpost-icon.svg" class="social-icon"></ion-icon></a>
-            </div>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title gradient-text"><a href="https://github.com/CommuniTii/CommuniTii_Hackathon">CommuniTii</a></h5>
-            <p class="card-text">
-              <li class="card-text">Putting social back into "social" media</li>
-            </p>
-          </div>
-          <!-- <div class="container link-container">
-              <a href="https://devpost.com/software/communitii" class="btn btn-primary">Devpost</a>
-          </div> -->
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title gradient-text"><a href="https://github.com/wdbears/TampBud">Tampbud</a></h5>
-            <p class="card-text">
-              <li class="card-text">First stop shop for all women hygienic-related emergencies</li>
-            </p>
-          </div>
-          <!-- <div class="container link-container">
-              <a href="https://devpost.com/software/tampbud" class="btn btn-primary">Devpost</a>
-          </div> -->
-        </div>
+
+    <!-- Banner -->
+    <div class="jumbotron-wrapper">
+      <div class="jumbotron col-12">
+        <h1 class="display-3 gradient-text heading">Projects</h1>
+        <span class="cool-line"></span>
+        <p class="sub-heading"></p>
+        <h1 class="lead sub-heading gradient-text">
+          A collection of things I've tinkered with.
+        </h1>
       </div>
     </div>
-    <div class="row card-collection">
-      <div class="col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title gradient-text"><a href="https://github.com/FrancoJ101/CISC3665Group4Project1">Matching Pennies</a></h5>
+
+    <!-- Card Grid -->
+    <div class="container-fluid card-wrapper">
+      <div class="row d-flex justify-content-center">
+        <!-- Cheffam Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">Cheffam</h5>
+            <hr class="cool-line" />
             <p class="card-text">
-              <li class="card-text">Took a "broken game" and created a more playable version of it</li>
+              A freelancing platform for chefs with a heavy focus on community
+              involvement
             </p>
           </div>
-          <!-- <div class="container link-container">
-              <a href="#"><ion-icon name="logo-github" class=""></ion-icon></a>
-          </div> -->
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/wdbears/Cheffam"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title gradient-text"><a href="https://github.com/wdbears/TampBud">Whack-A-Prof</a></h5>
+        <!-- CommuniTii Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">CommuniTii</h5>
+            <hr class="cool-line" />
+            <p class="card-text">Putting social back into "social" media</p>
+            <p class="card-text">Winner of the 2018 CUNY Hackathon! 🏆</p>
+          </div>
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/CommuniTii/CommuniTii_Hackathon"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="https://devpost.com/software/communitii"
+              ><ion-icon
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIKICAgICB2aWV3Qm94PSIwIDAgNDggNDgiCiAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDsiPjxnIGlkPSJzdXJmYWNlMSI+PHBhdGggc3R5bGU9IiBmaWxsOiMwMTU3OUI7IiBkPSJNIDM1LjA2MjUgNiBMIDEyLjkzNzUgNiBMIDIuODUxNTYzIDI0LjAwNzgxMyBMIDEzLjE5NTMxMyA0MiBMIDM1LjA2MjUgNDIgTCA0NS4xNDQ1MzEgMjQgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0ZGRkZGRjsiIGQ9Ik0gMjQuMTU2MjUgMTQgTCAxNyAxNCBMIDE3IDM0IEwgMjQuMTU2MjUgMzQgQyAyOS41OTc2NTYgMzQgMzQgMjkuNTI3MzQ0IDM0IDI0IEMgMzQgMTguNDcyNjU2IDI5LjU5NzY1NiAxNCAyNC4xNTYyNSAxNCBaIE0gMjQgMzAgTCAyMSAzMCBMIDIxIDE4IEwgMjQgMTggQyAyNy4zMDg1OTQgMTggMzAgMjAuNjkxNDA2IDMwIDI0IEMgMzAgMjcuMzA4NTk0IDI3LjMwODU5NCAzMCAyNCAzMCBaICI+PC9wYXRoPjwvZz48L3N2Zz4="
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+        <!-- TampBud Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">TampBud</h5>
+            <hr class="cool-line" />
             <p class="card-text">
-              <li class="card-text">A remake of the traditional game, Whack-A-Mole</li>
+              First stop shop for all women hygienic-related emergencies
             </p>
           </div>
-          <!-- <div class="container link-container">
-              <a href="https://devpost.com/software/tampbud" class="btn btn-primary">Devpost</a>
-          </div> -->
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/wdbears/TampBud"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a href="https://devpost.com/software/tampbud"
+              ><ion-icon
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IgogICAgIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIKICAgICB2aWV3Qm94PSIwIDAgNDggNDgiCiAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDsiPjxnIGlkPSJzdXJmYWNlMSI+PHBhdGggc3R5bGU9IiBmaWxsOiMwMTU3OUI7IiBkPSJNIDM1LjA2MjUgNiBMIDEyLjkzNzUgNiBMIDIuODUxNTYzIDI0LjAwNzgxMyBMIDEzLjE5NTMxMyA0MiBMIDM1LjA2MjUgNDIgTCA0NS4xNDQ1MzEgMjQgWiAiPjwvcGF0aD48cGF0aCBzdHlsZT0iIGZpbGw6I0ZGRkZGRjsiIGQ9Ik0gMjQuMTU2MjUgMTQgTCAxNyAxNCBMIDE3IDM0IEwgMjQuMTU2MjUgMzQgQyAyOS41OTc2NTYgMzQgMzQgMjkuNTI3MzQ0IDM0IDI0IEMgMzQgMTguNDcyNjU2IDI5LjU5NzY1NiAxNCAyNC4xNTYyNSAxNCBaIE0gMjQgMzAgTCAyMSAzMCBMIDIxIDE4IEwgMjQgMTggQyAyNy4zMDg1OTQgMTggMzAgMjAuNjkxNDA2IDMwIDI0IEMgMzAgMjcuMzA4NTk0IDI3LjMwODU5NCAzMCAyNCAzMCBaICI+PC9wYXRoPjwvZz48L3N2Zz4="
+              ></ion-icon
+            ></a>
+          </div>
+        </div>
+        <!-- bcSite Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">bcSite</h5>
+            <hr class="cool-line" />
+            <p class="card-text">
+              A virtual safe haven for students looking to escape the horrors of
+              Brooklyn College
+            </p>
+          </div>
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/Razatastic/bcSite"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <!-- Matching Pennies Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">Matching Pennies</h5>
+            <hr class="cool-line" />
+            <p class="card-text">
+              Took a "broken game" and created a more playable version of it
+            </p>
+          </div>
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/FrancoJ101/CISC3665Group4Project1"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <!-- Whack-A-Prof Card -->
+        <div class="col-xs-10 col-md-5 col-xl-3 card container">
+          <div class="card-body container">
+            <h5 class="card-title gradient-text">Whack-A-Prof</h5>
+            <hr class="cool-line" />
+            <p class="card-text">
+              A remake of the traditional game, Whack-A-Mole, using professors
+              as substitutes
+            </p>
+          </div>
+          <div class="container icon-wrapper">
+            <a onclick="comingSoon()" href=""
+              ><ion-icon name="play-circle"></ion-icon
+            ></a>
+            <a href="https://github.com/wolfchimneyrock/whack-a-prof"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- Particles.js background -->
     <canvas class="background"> </canvas>
 
+    <script>
+      function comingSoon() {
+        alert("Coming Soon!");
+      }
+    </script>
     <!-- Particles.js, Local JS files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="../scripts/projects.js"></script>

@@ -4,15 +4,19 @@ body {
 }
 
 /* Banner */
-.jumbotron {
+.jumbotron-wrapper {
+  margin-bottom: -32px;
+}
+
+.jumbotron-wrapper .jumbotron {
   border-radius: 20px 0px 0px 20px;
   background: black;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
   width: 95vw;
   float: right;
 }
 
-.cool-line {
+.jumbotron-wrapper .jumbotron .cool-line {
   display: block;
   height: 0.5px;
   background: white;
@@ -20,59 +24,52 @@ body {
 }
 
 /* Cards */
-.card-collection {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
-}
-
-.row {
-  width: 99vw;
-}
-
 .card {
   border-radius: 25px;
   background: black;
-  height: 250px;
+  width: 80%;
+  margin: 50px 20px 0px 20px;
 }
 
-.card-title {
-  font-size: 150%;
+.card .card-title {
+  font-size: 180%;
+  margin-top: 1%;
 }
 
-.card-text {
+.card .card-text {
   color: white;
   font-size: 110%;
 }
 
-.link-container {
+.card .cool-line {
+  background: white;
+  margin: 15px 0 15px 0;
+}
+
+.card .icon-wrapper {
   margin-bottom: 20px;
-  margin-left: 10px;
 }
 
-.social-icon {
+.card ion-icon {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
+  margin-right: 5px;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .sub-heading {
-    font-size: 22px;
-  }
-  .heading {
-    font-size: 72px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 600px wide or less */
 @media screen and (max-width: 600px) {
   .heading {
-    font-size: 400%;
+    font-size: 320%;
   }
   .sub-heading {
     font-size: 18px;
+  }
+  .card .card-text {
+    color: white;
+    font-size: 100%;
+  }
+  .card ion-icon {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=projects.css.map */
