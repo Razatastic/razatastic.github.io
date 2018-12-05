@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-bottom: 50px;
   min-height: 0px;
@@ -54,6 +58,10 @@ body {
   color: white;
   font-size: 32px;
   margin-right: 5px;
+}
+
+#playButton {
+  cursor: pointer;
 }
 
 /* If the screen size is 600px wide or less */

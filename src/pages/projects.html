@@ -34,6 +34,25 @@
   </head>
 
   <body>
+    <!-- Coming Soon alert -->
+    <div
+      id="comingSoonAlert"
+      class="alert alert-primary animated zoomIn show d-none"
+      role="alert"
+    >
+      <button
+        id="closeButton"
+        type="button"
+        class="close"
+        data-hide="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+      </button>
+      <strong>Coming soon!</strong> Check back at a later time 😊
+    </div>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <a class="navbar-brand" href="../../index.html">Razatastic</a>
@@ -90,7 +109,7 @@
             </p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton"
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/wdbears/Cheffam"
@@ -107,7 +126,7 @@
             <p class="card-text">Winner of the 2018 CUNY Hackathon! 🏆</p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton" href=""
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/CommuniTii/CommuniTii_Hackathon"
@@ -130,7 +149,7 @@
             </p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton" href=""
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/wdbears/TampBud"
@@ -154,7 +173,7 @@
             </p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton" href=""
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/Razatastic/bcSite"
@@ -172,7 +191,7 @@
             </p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton" href=""
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/FrancoJ101/CISC3665Group4Project1"
@@ -191,7 +210,7 @@
             </p>
           </div>
           <div class="container icon-wrapper">
-            <a onclick="comingSoon()" href=""
+            <a id="playButton" href=""
               ><ion-icon style="color: #01FF70" name="play-circle"></ion-icon
             ></a>
             <a href="https://github.com/wolfchimneyrock/whack-a-prof"
@@ -205,15 +224,10 @@
     <!-- Particles.js background -->
     <canvas class="background"> </canvas>
 
-    <script>
-      function comingSoon() {
-        alert("Coming Soon!");
-        return false;
-      }
-    </script>
     <!-- Particles.js, Local JS files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="../scripts/projects.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -230,5 +244,26 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Local JS -->
+    <script>
+      document
+        .getElementById("playButton")
+        .addEventListener("click", showAlert);
+
+      function showAlert() {
+        var alertElement = document.getElementById("comingSoonAlert");
+        alertElement.classList.remove("d-none");
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      document
+        .getElementById("closeButton")
+        .addEventListener("click", hideAlert);
+      function hideAlert() {
+        var alertElement = document.getElementById("comingSoonAlert");
+        alertElement.classList.add("d-none");
+      }
+    </script>
   </body>
 </html>
