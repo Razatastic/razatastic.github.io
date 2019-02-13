@@ -7,12 +7,9 @@ import Navbar from "./Navbar";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Navbar />
-        <h1>Projects</h1>
-        <Button>Submit</Button>
         <Card />
-        <DatePicker />
       </div>
     );
   }
