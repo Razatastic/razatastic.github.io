@@ -4,8 +4,6 @@ import { Menu, Icon } from "antd";
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-const divStyle = {};
-
 class Navbar extends Component {
   state = {
     current: "home"
@@ -24,7 +22,6 @@ class Navbar extends Component {
         onClick={this.handleClick}
         selectedKeys={[this.state.current]}
         mode="horizontal"
-        style={divStyle}
       >
         <Menu.Item key="home">
           <Icon type="home" />

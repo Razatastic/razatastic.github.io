@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, Icon } from "antd";
 
 const GreetingCard = () => {
